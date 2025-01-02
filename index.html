@@ -182,14 +182,14 @@
               </div>
             </div>
             <div class="my-4 border-b-2 border-dashed border-slate-300"></div>
-            <div class="">
+            <div class="w-full">
               <div class="flex justify-end">
                 <div class="bg-slate-300 rounded-lg px-5 py-2 w-fit">
                   <img src="images/wheel.png" alt="">
                 </div>
               </div>
               <div class="flex mt-5">
-                <div class="grid grid-cols-1 gap-5">
+                <div class="grid grid-cols-1 gap-5 mr-3">
                   <div class="p-3">A</div>
                   <div class="p-3">B</div>
                   <div class="p-3">C</div>
@@ -201,7 +201,7 @@
                   <div class="p-3">I</div>
                   <div class="p-3">J</div>
                 </div>
-                <div class="grid grid-cols-2 gap-5 mr-16">
+                <div class="w-1/2 grid grid-cols-2 gap-5 mr-16">
                   <div class="seat">A1</div>
                   <div class="seat">A2</div>
                   <div class="seat">B1</div>
@@ -223,7 +223,7 @@
                   <div class="seat">J1</div>
                   <div class="seat">J2</div>
                 </div>
-                <div class="grid grid-cols-2 gap-5">
+                <div class="w-1/2 grid grid-cols-2 gap-5">
                   <div class="seat">A3</div>
                   <div class="seat">A4</div>
                   <div class="seat">B3</div>
@@ -252,7 +252,7 @@
           <div class="w-1/2 ">
             <h3 class="text-2xl text-black font-semibold">Select Your Seat</h3>
             <div class="border-b-2 border-dashed border-slate-300 my-5"></div>
-            <div class="bg-slate-100 py-5 px-10 rounded-xl">
+            <div class="bg-slate-100 py-5 px-10 rounded-xl mb-2">
               <div class="flex justify-between items-center gap-5 my-3">
                 <h4 class="text-black text-lg font-semibold">Seat</h4>
                 <h4 class="text-black text-lg font-semibold">Class</h4>
@@ -286,7 +286,23 @@
               </div>
             </div>
 
-
+            <div class="my-5">
+              <label class="text-lg font-semibold" for="name">Passenger Name*</label>
+              <input class="w-full border border-stone-300 py-4 px-8 mt-2 rounded-xl outline-none" type="text" name="" id="name" placeholder="Enter your name">
+            </div>
+            <div class="my-5">
+              <label class="text-lg font-semibold" for="number">Phone Number*</label>
+              <input class="w-full border border-stone-300 py-4 px-8 mt-2 rounded-xl outline-none" type="number" name="" id="number" placeholder="Enter your phone number">
+            </div>
+            <div class="my-5">
+              <label class="text-lg font-semibold" for="email">Email ID</label>
+              <input class="w-full border border-stone-300 py-4 px-8 mt-2 rounded-xl outline-none" type="email" name="" id="email" placeholder="Enter your email ID">
+            </div>
+            <button type="submit" class="w-full text-xl font-semibold bg-primary text-white rounded-2xl py-4 px-10">Next</button>
+            <div class="flex space-x-10 items-center justify-center my-4">
+              <a class="text-slate-400 underline" href="#">Terms and Conditions</a>
+              <a class="text-slate-400 underline" href="#">Cancellation Policy</a>
+            </div>
           </div>
         </div>
 
