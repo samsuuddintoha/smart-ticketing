@@ -38,7 +38,7 @@ seats.addEventListener('click', (event) => {
   
   displaySeats.innerText = selectedSeats;
   seatsLeftElement.innerText = totalSeats;
-  if(selectedSeats >= 2){
+  if(selectedSeats > 2){
     discountBtnElement.removeAttribute('disabled')
     discountBtnElement.classList.add('bg-primary')
   }
@@ -65,7 +65,7 @@ function discount(){
   let grandValue = parseInt(grandTotal.innerText)
   // console.log(grandTotal)
 
-  if(seatsValue >= 2 && grandValue === 500 * seatsValue){
+  if(seatsValue > 2 && grandValue === 500 * seatsValue){
     if(discountValue.value == 'NEW15' || discountValue.value == 'Couple20'){
       let discount = grandValue * 15 / 100
       grandTotal.innerText = grandValue - discount
