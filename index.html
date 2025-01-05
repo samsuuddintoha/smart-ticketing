@@ -1,350 +1,468 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>P-Ticket</title>
-  <!-- Tailwind Css -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            primary: '#1DD100',
-            'primary-50': '#1DD10010',
-          }
-        }
-      }
-    }
-  </script>
-  <!-- Css -->
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body class="font-poppins">
-  <header class="container mx-auto flex justify-between items-center py-10">
-    <h1 class="text-4xl font-bold text-primary">P-Ticket</h1>
-    <nav>
-      <ul class="flex space-x-10">
-        <li><a class="hover:text-primary" href="#">Home</a></li>
-        <li><a class="hover:text-primary" href="#">About</a></li>
-        <li><a class="hover:text-primary" href="#">Destination</a></li>
-        <li><a class="hover:text-primary" href="#">Search</a></li>
-      </ul>
-    </nav>
-    <button class="flex space-x-5 bg-primary-50 px-5 py-2 border border-primary rounded-md text-primary font-bold">
-      <span>Bus </span>
-      <img src="images/bus-icon.png" alt="">
-    </button>
-  </header>
-  
-  <main>
-    <!-- Banner -->
-    <section class="container mx-auto mt-5  mb-32 relative">
-      <div class="flex justify-center items-center text-center bg-[url('images/banner.png')] bg-no-repeat bg-center bg-cover rounded-3xl py-20">
-        <div class="max-w-[740px] mb-20">
-          <h2 class="text-6xl font-bold text-white">
-            End-to-End Travel with <br>
-            <span class="text-primary">P Paribahan</span>
-          </h2>
-          <p class="text-base text-white my-10">
-            Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .
-          </p>
-          <a href="#buy-ticket" class="text-xl py-3 px-10 bg-primary rounded-lg">Buy Tickets</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>P-Ticket</title>
+    <!-- Tailwind Css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#1DD100',
+              'primary-50': '#1DD10010',
+            },
+          },
+        },
+      };
+    </script>
+    <!-- Css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="font-poppins">
+    <header class="container mx-auto flex justify-between items-center py-10">
+      <h1 class="text-4xl font-bold text-primary">P-Ticket</h1>
+      <nav>
+        <ul class="flex space-x-10">
+          <li><a class="hover:text-primary" href="#">Home</a></li>
+          <li><a class="hover:text-primary" href="#">About</a></li>
+          <li><a class="hover:text-primary" href="#">Destination</a></li>
+          <li><a class="hover:text-primary" href="#">Search</a></li>
+        </ul>
+      </nav>
+      <button
+        class="flex space-x-5 bg-primary-50 px-5 py-2 border border-primary rounded-md text-primary font-bold"
+      >
+        <span>Bus </span>
+        <img src="images/bus-icon.png" alt="" />
+      </button>
+    </header>
+
+    <main>
+      <!-- Banner -->
+      <section class="container mx-auto mt-5 mb-32 relative">
+        <div
+          class="flex justify-center items-center text-center bg-[url('images/banner.png')] bg-no-repeat bg-center bg-cover rounded-3xl py-20"
+        >
+          <div class="max-w-[740px] mb-20">
+            <h2 class="text-6xl font-bold text-white">
+              End-to-End Travel with <br />
+              <span class="text-primary">P Paribahan</span>
+            </h2>
+            <p class="text-base text-white my-10">
+              Yes, you can run unit tests and view the results directly within
+              the app. The integrated testing features allow for a streamlined .
+            </p>
+            <a
+              href="#buy-ticket"
+              class="text-xl py-3 px-10 bg-primary rounded-lg"
+              >Buy Tickets</a
+            >
+          </div>
         </div>
-      </div>
-      <div class="flex justify-center">
-        <div class="absolute grid grid-cols-3 gap-5 bottom-[-80px]">
-          <div class="bg-white border-b-4 border-primary w-fit px-20 py-10 rounded-3xl flex space-x-5">
-            <img src="images/people.png" alt="">
-            <div>
-              <h3 class="text-black text-3xl font-bold">500K+</h3>
-              <p class="text-slate-300 text-base">Registered users</p>
+        <div class="flex justify-center">
+          <div class="absolute grid grid-cols-3 gap-5 bottom-[-80px]">
+            <div
+              class="bg-white border-b-4 border-primary w-fit px-20 py-10 rounded-3xl flex space-x-5"
+            >
+              <img src="images/people.png" alt="" />
+              <div>
+                <h3 class="text-black text-3xl font-bold">500K+</h3>
+                <p class="text-slate-300 text-base">Registered users</p>
+              </div>
+            </div>
+            <div
+              class="bg-white border-b-4 border-primary w-fit px-20 py-10 rounded-3xl flex space-x-5"
+            >
+              <img src="images/people.png" alt="" />
+              <div>
+                <h3 class="text-black text-3xl font-bold">500K+</h3>
+                <p class="text-slate-300 text-base">Registered users</p>
+              </div>
+            </div>
+            <div
+              class="bg-white border-b-4 border-primary w-fit px-20 py-10 rounded-3xl flex space-x-5"
+            >
+              <img src="images/people.png" alt="" />
+              <div>
+                <h3 class="text-black text-3xl font-bold">500K+</h3>
+                <p class="text-slate-300 text-base">Registered users</p>
+              </div>
             </div>
           </div>
-          <div class="bg-white border-b-4 border-primary w-fit px-20 py-10 rounded-3xl flex space-x-5">
-            <img src="images/people.png" alt="">
-            <div>
-              <h3 class="text-black text-3xl font-bold">500K+</h3>
-              <p class="text-slate-300 text-base">Registered users</p>
+        </div>
+      </section>
+
+      <!-- Offers -->
+      <section class="container mx-auto my-52">
+        <h3 class="text-5xl text-black font-semibold text-center mb-20">
+          Best offers for you
+        </h3>
+        <div class="flex gap-10 mb-20">
+          <div
+            class="bg-[#FFBF0F] w-1/2 rounded-3xl flex items-center justify-evenly"
+          >
+            <div class="p-5">
+              <h4 class="font-bold text-5xl text-black">15% OFF</h4>
+              <h5 class="text-stone-700 text-xl font-medium">
+                on your next purchase
+              </h5>
+              <p class="text-stone-500 text-base">use by January 2024</p>
+            </div>
+            <img src="images/cupon-devider.png" alt="" />
+            <div class="p-5 text-center">
+              <h4 class="font-bold text-4xl text-black">NEW15</h4>
+              <p class="text-stone-500 text-base">Coupon Code</p>
             </div>
           </div>
-          <div class="bg-white border-b-4 border-primary w-fit px-20 py-10 rounded-3xl flex space-x-5">
-            <img src="images/people.png" alt="">
-            <div>
-              <h3 class="text-black text-3xl font-bold">500K+</h3>
-              <p class="text-slate-300 text-base">Registered users</p>
+
+          <div
+            class="bg-[#F78C9C] w-1/2 rounded-3xl flex items-center justify-evenly"
+          >
+            <div class="p-5">
+              <h4 class="font-bold text-5xl text-black">20% OFF</h4>
+              <h5 class="text-stone-700 text-xl font-medium">
+                on your next purchase
+              </h5>
+              <p class="text-stone-500 text-base">use by January 2024</p>
+            </div>
+            <img src="images/cupon-devider.png" alt="" />
+            <div class="p-5 text-center">
+              <h4 class="font-bold text-4xl text-black">Couple20</h4>
+              <p class="text-stone-500 text-base">Coupon Code</p>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+        <div class="flex justify-center">
+          <button
+            class="text-xl text-primary py-3 px-10 border border-primary rounded-lg"
+          >
+            See All Offers
+          </button>
+        </div>
+      </section>
 
-    <!-- Offers -->
-    <section class="container mx-auto my-52">
-      <h3 class="text-5xl text-black font-semibold text-center mb-20">Best offers for you</h3>
-      <div class="flex gap-10 mb-20">
-        <div class="bg-[#FFBF0F] w-1/2 rounded-3xl flex items-center justify-evenly">
-          <div class="p-5">
-            <h4 class="font-bold text-5xl text-black">15% OFF</h4>
-            <h5 class="text-stone-700 text-xl font-medium">on your next purchase</h5>
-            <p class="text-stone-500 text-base">use by January 2024</p>
+      <!-- Buy Tickets -->
+      <section
+        id="buy-ticket"
+        class="bg-gray-50 rounded-t-[80px] border-t-2 border-primary"
+      >
+        <div class="container mx-auto py-20">
+          <div class="text-center max-w-[800px] mx-auto">
+            <h3 class="text-black text-4xl font-bold mb-5">P.H Paribahan</h3>
+            <p class="text-base text-stone-500">
+              Yes, you can run unit tests and view the results directly within
+              the app. The integrated testing features allow for a streamlined .
+            </p>
           </div>
-          <img src="images/cupon-devider.png" alt="">
-          <div class="p-5 text-center">
-            <h4 class="font-bold text-4xl text-black">NEW15</h4>
-            <p class="text-stone-500 text-base">Coupon Code</p>
+
+          <!-- Coach Info and Price -->
+          <div
+            class="flex gap-5 justify-evenly items-center bg-white rounded-3xl my-10"
+          >
+            <div class="p-5">
+              <div class="flex justify-between items-center gap-10 mb-5">
+                <div class="flex gap-5 items-center">
+                  <div>
+                    <img src="images/bus-logo.png" alt="" />
+                  </div>
+                  <div>
+                    <h4 class="text-3xl font-semibold text-black">
+                      Greenline Paribahan
+                    </h4>
+                    <p class="text-lg text-slate-400">
+                      Coach-009-WEB ! AC_Business
+                    </p>
+                  </div>
+                </div>
+                <button
+                  class="flex items-center space-x-4 bg-primary-50 px-5 py-2 border border-primary rounded-md text-primary"
+                >
+                  <img src="images/seat-green.png" alt="" /><span
+                    ><span id="seats-left">40</span> Seats left</span
+                  >
+                </button>
+              </div>
+              <div class="p-8 bg-gray-50 rounded-3xl">
+                <div class="flex justify-between items-center">
+                  <p class="text-slate-400">Route</p>
+                  <p>Dhaka - Sylhet</p>
+                </div>
+                <div
+                  class="my-4 border-t-2 border-slate-300 border-dashed"
+                ></div>
+                <div class="flex justify-between items-center">
+                  <p class="text-slate-400">Departure Time</p>
+                  <p>9:00 PM</p>
+                </div>
+                <div
+                  class="my-4 border-t-2 border-slate-300 border-dashed"
+                ></div>
+                <div class="grid grid-cols-3 gap-5">
+                  <div class="bg-stone-200 px-6 py-3 rounded-lg">
+                    Boarding Point - Laxmipur
+                  </div>
+                  <div class="bg-stone-200 px-6 py-3 rounded-lg">
+                    Boarding Point - Laxmipur
+                  </div>
+                  <div class="bg-stone-200 px-6 py-3 rounded-lg">
+                    Boarding Point - Laxmipur
+                  </div>
+                </div>
+              </div>
+            </div>
+            <img src="images/info-devider.png" alt="" />
+            <div
+              class="p-5 flex flex-col justify-center items-center text-center"
+            >
+              <img src="images/fare.png" alt="" />
+              <h4 class="text-3xl font-bold text-black mt-6">550 Taka</h4>
+              <p class="text-2xl text-slate-400">Per Seat</p>
+            </div>
+          </div>
+
+          <!-- Buying -->
+          <div class="flex justify-evenly gap-5 bg-white p-10 rounded-3xl">
+            <div class="w-1/2">
+              <h3 class="text-2xl text-black font-semibold">
+                Select Your Seat
+              </h3>
+              <div class="my-4 border-b-2 border-dashed border-slate-300"></div>
+              <div class="flex justify-between gap-5 items-center">
+                <div class="flex items-center gap-3 text-slate-400">
+                  <img src="images/seat-gray.png" alt="" />
+                  Available
+                </div>
+                <div class="flex items-center gap-3 text-primary">
+                  <img src="images/seat-green-filled.png" alt="" />
+                  Selected
+                </div>
+              </div>
+              <div class="my-4 border-b-2 border-dashed border-slate-300"></div>
+              <div class="w-full">
+                <div class="flex justify-end">
+                  <div class="bg-slate-300 rounded-lg px-5 py-2 w-fit">
+                    <img src="images/wheel.png" alt="" />
+                  </div>
+                </div>
+                <div class="flex mt-5">
+                  <div class="grid grid-cols-1 gap-5 mr-3">
+                    <div class="p-3">A</div>
+                    <div class="p-3">B</div>
+                    <div class="p-3">C</div>
+                    <div class="p-3">D</div>
+                    <div class="p-3">E</div>
+                    <div class="p-3">F</div>
+                    <div class="p-3">G</div>
+                    <div class="p-3">H</div>
+                    <div class="p-3">I</div>
+                    <div class="p-3">J</div>
+                  </div>
+                  <div id="seats" class="w-full grid grid-cols-4 gap-5">
+                    <div id="a1" class="seat">A1</div>
+                    <div id="a2" class="seat">A2</div>
+                    <div id="a3" class="seat">A3</div>
+                    <div id="a4" class="seat">A4</div>
+                    
+                    <div id="b1" class="seat">B1</div>
+                    <div id="b2" class="seat">B2</div>
+                    <div id="b3" class="seat">B3</div>
+                    <div id="b4" class="seat">B4</div>
+                    
+                    <div id="c1" class="seat">C1</div>
+                    <div id="c2" class="seat">C2</div>
+                    <div id="c3" class="seat">C3</div>
+                    <div id="c4" class="seat">C4</div>
+                    
+                    <div id="d1" class="seat">D1</div>
+                    <div id="d2" class="seat">D2</div>
+                    <div id="d3" class="seat">D3</div>
+                    <div id="d4" class="seat">D4</div>
+                    
+                    <div id="e1" class="seat">E1</div>
+                    <div id="e2" class="seat">E2</div>
+                    <div id="e3" class="seat">E3</div>
+                    <div id="e4" class="seat">E4</div>
+                    
+                    <div id="f1" class="seat">F1</div>
+                    <div id="f2" class="seat">F2</div>
+                    <div id="f3" class="seat">F3</div>
+                    <div id="f4" class="seat">F4</div>
+                    
+                    <div id="g1" class="seat">G1</div>
+                    <div id="g2" class="seat">G2</div>
+                    <div id="g3" class="seat">G3</div>
+                    <div id="g4" class="seat">G4</div>
+                    
+                    <div id="h1" class="seat">H1</div>
+                    <div id="h2" class="seat">H2</div>
+                    <div id="h3" class="seat">H3</div>
+                    <div id="h4" class="seat">H3</div>
+
+                    <div id="i1" class="seat">I1</div>
+                    <div id="i2" class="seat">I2</div>
+                    <div id="i3" class="seat">I3</div>
+                    <div id="i4" class="seat">I4</div>
+
+                    <div id="j1" class="seat">J1</div>
+                    <div id="j2" class="seat">J2</div>
+                    <div id="j3" class="seat">J3</div>
+                    <div id="j4" class="seat">J4</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mx-10 border-r-2 border-dashed border-slate-300"></div>
+            <div class="w-1/2">
+              <h3 class="text-2xl text-black font-semibold">
+                Select Your Seat
+              </h3>
+              <div class="border-b-2 border-dashed border-slate-300 my-5"></div>
+              <div class="bg-slate-100 py-5 px-10 rounded-xl mb-2">
+                <div class="flex justify-between items-center gap-5 my-3">
+                  <h4 class="text-black text-lg font-semibold">
+                    Seat
+                    <span id="selected-seats" class="px-3 rounded-2xl text-white bg-primary"
+                      >0</span
+                    >
+                  </h4>
+                  <h4 class="text-black text-lg font-semibold">Class</h4>
+                  <h4 class="text-black text-lg font-semibold">Price</h4>
+                </div>
+                <div class="mx-4 border-b-2 border-dashed border-white"></div>
+                <div id="total-seat">
+                  
+                  <!-- <div class="flex items-center justify-between my-3">
+                    <p class="text-xl text-slate-400">C1</p>
+                    <p class="text-xl text-slate-400">Economy</p>
+                    <p class="text-xl text-slate-400">550</p>
+                  </div> -->
+                </div>
+                <div class="border-b-2 border-black"></div>
+                <div class="flex justify-between items-center gap-5 my-3">
+                  <h4 class="text-black text-lg font-semibold">Total Price</h4>
+                  <h4 class="text-black text-lg font-semibold">
+                    BDT <span id="total-price">00</span>
+                  </h4>
+                </div>
+                <div class="bg-white flex rounded-3xl p-3">
+                  <input id="discount-value"
+                    class="focus:outline-none w-full p-4 text-base text-black"
+                    type="text"
+                    placeholder="Have any coupon?"
+                  />
+                  <button id="discount-button" disabled onclick="discount(1)"
+                    type="submit"
+                    class="text-xl font-semibold text-white rounded-xl py-3 px-10"
+                  >
+                    Apply
+                  </button>
+                </div>
+                <div class="flex justify-between items-center gap-5 my-3">
+                  <h4 class="text-black text-lg font-semibold">Grand Total</h4>
+                  <h4 class="text-black text-lg font-semibold">
+                    BDT <span id="grand-total">00</span>
+                  </h4>
+                </div>
+              </div>
+
+              <div class="my-5">
+                <label class="text-lg font-semibold" for="name"
+                  >Passenger Name*</label
+                >
+                <input
+                  class="w-full border border-stone-300 py-4 px-8 mt-2 rounded-xl outline-none"
+                  type="text"
+                  name=""
+                  id="name"
+                  placeholder="Enter your name"
+                />
+              </div>
+              <div class="my-5">
+                <label class="text-lg font-semibold" for="number"
+                  >Phone Number*</label
+                >
+                <input
+                  class="w-full border border-stone-300 py-4 px-8 mt-2 rounded-xl outline-none"
+                  type="number"
+                  name=""
+                  id="number"
+                  placeholder="Enter your phone number"
+                />
+              </div>
+              <div class="my-5">
+                <label class="text-lg font-semibold" for="email"
+                  >Email ID</label
+                >
+                <input
+                  class="w-full border border-stone-300 py-4 px-8 mt-2 rounded-xl outline-none"
+                  type="email"
+                  name=""
+                  id="email"
+                  placeholder="Enter your email ID"
+                />
+              </div>
+              <button
+                type="submit"
+                class="w-full text-xl font-semibold bg-primary text-white rounded-2xl py-4 px-10"
+              >
+                Next
+              </button>
+              <div class="flex space-x-10 items-center justify-center my-4">
+                <a class="text-slate-400 underline" href="#"
+                  >Terms and Conditions</a
+                >
+                <a class="text-slate-400 underline" href="#"
+                  >Cancellation Policy</a
+                >
+              </div>
+            </div>
           </div>
         </div>
+      </section>
+    </main>
 
-        <div class="bg-[#F78C9C] w-1/2 rounded-3xl flex items-center justify-evenly">
-          <div class="p-5">
-            <h4 class="font-bold text-5xl text-black">20% OFF</h4>
-            <h5 class="text-stone-700 text-xl font-medium">on your next purchase</h5>
-            <p class="text-stone-500 text-base">use by January 2024</p>
-          </div>
-          <img src="images/cupon-devider.png" alt="">
-          <div class="p-5 text-center">
-            <h4 class="font-bold text-4xl text-black">Couple20</h4>
-            <p class="text-stone-500 text-base">Coupon Code</p>
-          </div>
-        </div>
-      </div>
-      <div class="flex justify-center">
-        <button class="text-xl text-primary py-3 px-10 border border-primary rounded-lg">See All Offers</button>
-      </div>
-    </section>
-
-    <!-- Buy Tickets -->
-    <section id="buy-ticket" class="bg-gray-50 rounded-t-[80px] border-t-2 border-primary">
+    <footer class="bg-stone-900 text-white">
       <div class="container mx-auto py-20">
-        <div class="text-center max-w-[800px] mx-auto">
-          <h3 class="text-black text-4xl font-bold mb-5">P.H Paribahan</h3>
-          <p class="text-base text-stone-500">
-            Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .
-          </p>
-        </div>
-
-        <!-- Coach Info and Price -->
-        <div class="flex gap-5 justify-evenly items-center bg-white rounded-3xl my-10">
-          <div class="p-5">
-            <div class="flex justify-between items-center gap-10 mb-5">
-              <div class="flex gap-5 items-center">
-                <div>
-                  <img src="images/bus-logo.png" alt="">
-                </div>
-                <div>
-                  <h4 class="text-3xl font-semibold text-black">Greenline Paribahan</h4>
-                  <p class="text-lg text-slate-400">Coach-009-WEB ! AC_Business</p>
-                </div>
-              </div>
-              <button class="flex items-center space-x-4 bg-primary-50 px-5 py-2 border border-primary rounded-md text-primary"><img src="images/seat-green.png" alt=""><span><span>40</span> Seats left</span></button>
-            </div>
-            <div class="p-8 bg-gray-50 rounded-3xl">
-              <div class="flex justify-between items-center">
-                <p class="text-slate-400">Route</p>
-                <p>Dhaka - Sylhet</p>
-              </div>
-              <div class="my-4 border-t-2 border-slate-300 border-dashed"></div>
-              <div class="flex justify-between items-center">
-                <p class="text-slate-400">Departure Time</p>
-                <p>9:00 PM</p>
-              </div>
-              <div class="my-4 border-t-2 border-slate-300 border-dashed"></div>
-              <div class="grid grid-cols-3 gap-5">
-                <div class="bg-stone-200 px-6 py-3 rounded-lg">Boarding Point - Laxmipur</div>
-                <div class="bg-stone-200 px-6 py-3 rounded-lg">Boarding Point - Laxmipur</div>
-                <div class="bg-stone-200 px-6 py-3 rounded-lg">Boarding Point - Laxmipur</div>
+        <!-- top -->
+        <div class="flex justify-between">
+          <div class="space-y-2">
+            <h1 class="text-4xl font-bold">P-Ticket</h1>
+            <p class="text-base">
+              P-Ticket is a digital platform to make your daily commuting
+              better.
+            </p>
+          </div>
+          <div class="space-y-2">
+            <h3>Download our app</h3>
+            <div class="flex items-center gap-5 border rounded-md w-fit p-2">
+              <img src="images/playstore.png" alt="" />
+              <div>
+                <p class="text-xs">GET IT ON</p>
+                <p class="text-lg">Google Play</p>
               </div>
             </div>
           </div>
-          <img src="images/info-devider.png" alt="">
-          <div class="p-5 flex flex-col justify-center items-center text-center">
-            <img src="images/fare.png" alt="">
-            <h4 class="text-3xl font-bold text-black mt-6">550 Taka</h4>
-            <p class="text-2xl text-slate-400">Per Seat</p>
-          </div>
         </div>
-
-        <!-- Buying -->
-        <div class="flex justify-evenly gap-5 bg-white p-10 rounded-3xl">
-          <div class="w-1/2">
-            <h3 class="text-2xl text-black font-semibold">Select Your Seat</h3>
-            <div class="my-4 border-b-2 border-dashed border-slate-300"></div>
-            <div class="flex justify-between gap-5 items-center">
-              <div class="flex items-center gap-3 text-slate-400">
-                <img src="images/seat-gray.png" alt="">
-                Available
-              </div>
-              <div class="flex items-center gap-3 text-primary">
-                <img src="images/seat-green-filled.png" alt="">
-                Selected
-              </div>
-            </div>
-            <div class="my-4 border-b-2 border-dashed border-slate-300"></div>
-            <div class="w-full">
-              <div class="flex justify-end">
-                <div class="bg-slate-300 rounded-lg px-5 py-2 w-fit">
-                  <img src="images/wheel.png" alt="">
-                </div>
-              </div>
-              <div class="flex mt-5">
-                <div class="grid grid-cols-1 gap-5 mr-3">
-                  <div class="p-3">A</div>
-                  <div class="p-3">B</div>
-                  <div class="p-3">C</div>
-                  <div class="p-3">D</div>
-                  <div class="p-3">E</div>
-                  <div class="p-3">F</div>
-                  <div class="p-3">G</div>
-                  <div class="p-3">H</div>
-                  <div class="p-3">I</div>
-                  <div class="p-3">J</div>
-                </div>
-                <div class="w-1/2 grid grid-cols-2 gap-5 mr-16">
-                  <div class="seat">A1</div>
-                  <div class="seat">A2</div>
-                  <div class="seat">B1</div>
-                  <div class="seat">B2</div>
-                  <div class="seat">C1</div>
-                  <div class="seat">C2</div>
-                  <div class="seat">D1</div>
-                  <div class="seat">D2</div>
-                  <div class="seat">E1</div>
-                  <div class="seat">E2</div>
-                  <div class="seat">F1</div>
-                  <div class="seat">F2</div>
-                  <div class="seat">G1</div>
-                  <div class="seat">G2</div>
-                  <div class="seat">H1</div>
-                  <div class="seat">H2</div>
-                  <div class="seat">I1</div>
-                  <div class="seat">I2</div>
-                  <div class="seat">J1</div>
-                  <div class="seat">J2</div>
-                </div>
-                <div class="w-1/2 grid grid-cols-2 gap-5">
-                  <div class="seat">A3</div>
-                  <div class="seat">A4</div>
-                  <div class="seat">B3</div>
-                  <div class="seat">B4</div>
-                  <div class="seat">C3</div>
-                  <div class="seat">C4</div>
-                  <div class="seat">D3</div>
-                  <div class="seat">D4</div>
-                  <div class="seat">E3</div>
-                  <div class="seat">E4</div>
-                  <div class="seat">F3</div>
-                  <div class="seat">F4</div>
-                  <div class="seat">G3</div>
-                  <div class="seat">G4</div>
-                  <div class="seat">H3</div>
-                  <div class="seat">H3</div>
-                  <div class="seat">I3</div>
-                  <div class="seat">I4</div>
-                  <div class="seat">J3</div>
-                  <div class="seat">J4</div>
-                </div>
-              </div>
-            </div>
+        <!-- border -->
+        <div class="border-b-2 border-dashed border-r-slate-600 my-7"></div>
+        <!-- end -->
+        <div class="flex justify-between items-center">
+          <div>
+            <p>&copy; all rights reserved, P-Ticket services limited.2024</p>
           </div>
-          <div class="mx-10 border-r-2 border-dashed border-slate-300"></div>
-          <div class="w-1/2 ">
-            <h3 class="text-2xl text-black font-semibold">Select Your Seat</h3>
-            <div class="border-b-2 border-dashed border-slate-300 my-5"></div>
-            <div class="bg-slate-100 py-5 px-10 rounded-xl mb-2">
-              <div class="flex justify-between items-center gap-5 my-3">
-                <h4 class="text-black text-lg font-semibold">Seat</h4>
-                <h4 class="text-black text-lg font-semibold">Class</h4>
-                <h4 class="text-black text-lg font-semibold">Price</h4>
-              </div>
-              <div class="mx-4 border-b-2 border-dashed border-white"></div>
-              <div id="total-seat">
-                <div class="flex items-center justify-between my-3">
-                  <p class="text-xl text-slate-400">C1</p>
-                  <p class="text-xl text-slate-400">Economy</p>
-                  <p class="text-xl text-slate-400">550</p>
-                </div>
-                <div class="flex items-center justify-between my-3">
-                  <p class="text-xl text-slate-400">C1</p>
-                  <p class="text-xl text-slate-400">Economy</p>
-                  <p class="text-xl text-slate-400">550</p>
-                </div>
-              </div>
-              <div class="border-b-2 border-black"></div>
-              <div class="flex justify-between items-center gap-5 my-3">
-                <h4 class="text-black text-lg font-semibold">Total Price</h4>
-                <h4 class="text-black text-lg font-semibold">BDT <span>1100</span></h4>
-              </div>
-              <div class="bg-white flex rounded-3xl p-3">
-                <input class="focus:outline-none w-full p-4 text-base text-black" type="text" placeholder="Have any coupon?">
-                <button type="submit" class="text-xl font-semibold bg-primary text-white rounded-xl py-3 px-10">Apply</button>
-              </div>
-              <div class="flex justify-between items-center gap-5 my-3">
-                <h4 class="text-black text-lg font-semibold">Grand Total</h4>
-                <h4 class="text-black text-lg font-semibold">BDT <span>1100</span></h4>
-              </div>
-            </div>
-
-            <div class="my-5">
-              <label class="text-lg font-semibold" for="name">Passenger Name*</label>
-              <input class="w-full border border-stone-300 py-4 px-8 mt-2 rounded-xl outline-none" type="text" name="" id="name" placeholder="Enter your name">
-            </div>
-            <div class="my-5">
-              <label class="text-lg font-semibold" for="number">Phone Number*</label>
-              <input class="w-full border border-stone-300 py-4 px-8 mt-2 rounded-xl outline-none" type="number" name="" id="number" placeholder="Enter your phone number">
-            </div>
-            <div class="my-5">
-              <label class="text-lg font-semibold" for="email">Email ID</label>
-              <input class="w-full border border-stone-300 py-4 px-8 mt-2 rounded-xl outline-none" type="email" name="" id="email" placeholder="Enter your email ID">
-            </div>
-            <button type="submit" class="w-full text-xl font-semibold bg-primary text-white rounded-2xl py-4 px-10">Next</button>
-            <div class="flex space-x-10 items-center justify-center my-4">
-              <a class="text-slate-400 underline" href="#">Terms and Conditions</a>
-              <a class="text-slate-400 underline" href="#">Cancellation Policy</a>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-  </main>
-
-  <footer class="bg-stone-900 text-white">
-    <div class="container mx-auto py-20">
-      <!-- top -->
-      <div class="flex justify-between">
-        <div class="space-y-2">
-          <h1 class="text-4xl font-bold">P-Ticket</h1>
-          <p class="text-base">
-            P-Ticket is a digital platform to make your daily commuting better.
-          </p>
-        </div>
-        <div class="space-y-2">
-          <h3>Download our app</h3>
-          <div class="flex items-center gap-5 border rounded-md w-fit p-2">
-            <img src="images/playstore.png" alt="">
-            <div>
-              <p class="text-xs">GET IT ON</p>
-              <p class="text-lg">Google Play</p>
-            </div>
+          <div class="flex space-x-6">
+            <a class="hover:text-primary" href="#">Return & refund policy</a>
+            <a class="hover:text-primary" href="#">Terms & condition</a>
+            <a class="hover:text-primary" href="#">Privacy policy</a>
           </div>
         </div>
       </div>
-      <!-- border -->
-      <div class="border-b-2 border-dashed border-r-slate-600 my-7"></div>
-      <!-- end -->
-      <div class="flex justify-between items-center">
-        <div>
-          <p> &copy; all rights reserved, P-Ticket services limited.2024 </p>
-        </div>
-        <div class="flex space-x-6">
-          <a class="hover:text-primary" href="#">Return & refund policy</a>
-          <a class="hover:text-primary" href="#">Terms & condition</a>
-          <a class="hover:text-primary" href="#">Privacy policy</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-</body>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/buy-ticket.js"></script>
+  </body>
 </html>

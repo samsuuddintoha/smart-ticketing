@@ -11,4 +11,9 @@ html {
   background-color: #F7F8F8;
   border-radius: 10px;
   text-align: center;
+  cursor: pointer;
+}
+.seat.active {
+  color: #fff;
+  background-color: #1DD100;
 }
